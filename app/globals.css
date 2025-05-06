@@ -15,12 +15,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #9651cf;
   }
 }
 
 body {
-  background: var(--background);
+  background: url('/homepage-bg.webp'), var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
