@@ -1,4 +1,3 @@
-# app.py or main.py (Flask side)
 from flask import Flask, jsonify
 
 app = Flask(__name__)
