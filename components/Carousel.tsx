@@ -45,7 +45,7 @@ const Carousel = ({
         {items.map((item, index) => (
           <div
             key={`carousel-item-${item.id}`}
-            className="flex-shrink-0 w-full flex flex-col items-center justify-center text-center p-8 bg-gray-100 rounded-lg shadow-lg"
+            className="flex-shrink-0 w-full flex flex-col items-center justify-center text-center p-8 bg-neutral-800 text-neutral-100 rounded-lg shadow-lg"
           >
             <img
               src={item.image}

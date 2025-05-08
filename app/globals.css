@@ -1,8 +1,11 @@
+/* Import Google Fonts Electrolize */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-electrolize: "Electrolize", sans-serif; /* Add Electrolize font */
 }
 
 @theme inline {
@@ -22,5 +25,8 @@
 body {
   background: url('/homepage-bg.webp'), var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-electrolize); /* Ensure Electrolize font is applied */
+  font-weight: 400;
+  font-style: normal;
 }
+

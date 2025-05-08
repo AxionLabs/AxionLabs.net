@@ -9,7 +9,7 @@
     "flask-dev-noinstall:windows": "py -m flask --app api/index run -p 5328",
     "flask-dev:linux": "pip3 install -r requirements.txt && python3 -m flask --app api/index run -p 5328",
     "flask-dev-noinstall:linux": "python3 -m flask --app api/index run -p 5328",
-    "next-dev": "next dev",
+    "next-dev": "next dev --turbopack",
     "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
     "fast-dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev-noinstall\"",
     "build": "next build",
@@ -17,9 +17,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^3.7.0",
+    "@stripe/stripe-js": "^7.3.0",
     "next": "15.3.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
